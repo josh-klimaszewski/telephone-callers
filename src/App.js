@@ -20,7 +20,11 @@ class App extends Component {
         <div className="top">
           <div className="view">
             <div className="header">Telephone Callers</div>
-            <ViewBox />
+            <ViewBox
+              homeListShow={this.state.homeListShow}
+              projectsListShow={this.state.projectsListShow}
+              videosListShow={this.state.videosListShow}
+             />
           </div>
           <NavBar
             onHomeClick={() => this.setState({homeListShow: true, projectsListShow: false, videosListShow: false})}
@@ -28,9 +32,10 @@ class App extends Component {
             onVideosClick={() => this.setState({homeListShow: false, projectsListShow: false, videosListShow: true})}
            />
         </div>
-        <ListBox 
-          
-        />
+        {!this.state.homeListShow && <ListBox 
+          projectsListShow={this.state.projectsListShow}
+          videosListShow={this.state.videosListShow}
+        />}
       </div>
     );
   }
