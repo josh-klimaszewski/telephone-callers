@@ -35,6 +35,7 @@ class App extends Component {
               projectsListShow={this.state.projectsListShow}
               videosListShow={this.state.videosListShow}
               selectedVideoUrl={this.state.selectedVideoUrl}
+              selectedProject={this.state.selectedProject}
              />
           </div>
           <NavBar

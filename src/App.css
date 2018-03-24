@@ -73,7 +73,20 @@
     height: 100px;
     width: 100px;
 }
+.projects-view {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.projects-view iframe {
+    
+    height: inherit;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
 
 
 
