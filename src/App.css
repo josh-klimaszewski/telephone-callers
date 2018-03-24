@@ -48,3 +48,22 @@
     margin-top: 2%;
     
 }
+.videos-list {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    
+}
+.video-thumb {
+    width: 20%;
+    margin: 2% 0%;
+    border: 1px solid black;
+   
+}
+
+
+/* .video-one {
+    background-image: url("media/telcal1.jpg");
+    
+    
+} */
