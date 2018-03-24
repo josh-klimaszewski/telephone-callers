@@ -1,5 +1,4 @@
 import React from 'react';
-
 import VideoThumbnail from './video-thumbnail';
 
 const VideosList = ({onVideoSelect}) => {
@@ -16,11 +15,9 @@ const VideosList = ({onVideoSelect}) => {
                 videoUrl={videoUrl}
                 key={videoUrl}
                 onVideoSelect={onVideoSelect}
-                
              />
         );
     });
-    
     
     return (
         <div className="videos-list">

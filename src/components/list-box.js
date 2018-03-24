@@ -4,14 +4,10 @@ import VideosList from './lists/videos-list';
 
 const ListBox = ({projectsListShow, videosListShow, onVideoSelect}) => {
 
-
     return (
         <div className="list-box">
             {projectsListShow && <ProjectsList />}
-            {videosListShow && <VideosList 
-                
-                onVideoSelect={onVideoSelect}
-            />}
+            {videosListShow && <VideosList onVideoSelect={onVideoSelect} />}
         </div>
     );
 }
