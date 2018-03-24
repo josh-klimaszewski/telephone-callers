@@ -11,7 +11,8 @@ class App extends Component {
     this.state = {
       homeListShow: true,
       projectsListShow: false,
-      videosListShow: false
+      videosListShow: false,
+      selectedVideoUrl: null
     }
   }
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
         {!this.state.homeListShow && <ListBox 
           projectsListShow={this.state.projectsListShow}
           videosListShow={this.state.videosListShow}
+          onVideoSelect={selectedVideoUrl => this.setState({selectedVideoUrl})}
         />}
       </div>
     );
