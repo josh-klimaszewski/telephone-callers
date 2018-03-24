@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectsList from './lists/projects-list';
 import VideosList from './lists/videos-list';
 
-const ListBox = ({projectsListShow, videosListShow}, props) => {
+const ListBox = ({projectsListShow, videosListShow, onVideoSelect}) => {
 
 
     return (
@@ -10,7 +10,7 @@ const ListBox = ({projectsListShow, videosListShow}, props) => {
             {projectsListShow && <ProjectsList />}
             {videosListShow && <VideosList 
                 
-                onVideoSelect={props.onVideoSelect}
+                onVideoSelect={onVideoSelect}
             />}
         </div>
     );

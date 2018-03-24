@@ -15,7 +15,7 @@ const VideosList = ({onVideoSelect}) => {
             <VideoThumbnail
                 videoUrl={videoUrl}
                 key={videoUrl}
-                onClick={() => onVideoSelect(videoUrl)}
+                onVideoSelect={onVideoSelect}
                 
              />
         );
