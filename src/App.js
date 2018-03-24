@@ -8,17 +8,22 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.videoHandler = this.videoHandler.bind(this);
-
+    this.projectHandler = this.projectHandler.bind(this);
     this.state = {
       homeListShow: true,
       projectsListShow: false,
       videosListShow: false,
-      selectedVideoUrl: null
+      selectedVideoUrl: null,
+      selectedProject: {}
     }
   }
   videoHandler(videoUrl) {
     this.setState({selectedVideoUrl: videoUrl})
   }
+  projectHandler(project) {
+    this.setState({selectedProject: project})
+  }
+
   render() {
     return (
       <div className="App">
@@ -29,6 +34,7 @@ class App extends Component {
               homeListShow={this.state.homeListShow}
               projectsListShow={this.state.projectsListShow}
               videosListShow={this.state.videosListShow}
+              selectedVideoUrl={this.state.selectedVideoUrl}
              />
           </div>
           <NavBar
@@ -41,6 +47,7 @@ class App extends Component {
           projectsListShow={this.state.projectsListShow}
           videosListShow={this.state.videosListShow}
           onVideoSelect={this.videoHandler}
+          onProjectSelect={this.projectHandler}
         />}
       </div>
     );

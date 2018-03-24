@@ -8,8 +8,8 @@ const VideoThumbnail = ({videoUrl, onVideoSelect}) => {
             <img 
             onClick={() => onVideoSelect(videoUrl)}
             src={thumbnail.default.url}
-            width={thumbnail.default.width}
-            height={thumbnail.default.height}
+            width="100px"
+            height="100px"
             alt=''
              />
         </div>

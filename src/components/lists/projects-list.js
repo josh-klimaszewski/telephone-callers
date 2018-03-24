@@ -1,7 +1,8 @@
 import React from 'react';
 import ProjectThumbnail from './project-thumbnail';
 
-const ProjectsList = () => {
+
+const ProjectsList = ({onProjectSelect}) => {
     const projectsInfo = [
         {name: 'Wainscoting 2057', imageUrl: 'https://f4.bcbits.com/img/a3019626676_16.jpg', src: '991521820' },
         {name: 'Split w/ Uzi Rash', imageUrl: 'https://f4.bcbits.com/img/a4213601407_16.jpg', src: '375210525'},
@@ -13,7 +14,9 @@ const ProjectsList = () => {
         return (
             <ProjectThumbnail 
                 key={project.name}
-                name={project.name}
+                imageUrl={project.imageUrl}
+                project={project}
+                onProjectSelect={onProjectSelect}
             />
         );
     });

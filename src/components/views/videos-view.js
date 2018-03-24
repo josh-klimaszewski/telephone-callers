@@ -1,10 +1,11 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 
-const VideosView = () => {
+const VideosView = ({selectedVideoUrl}) => {
     
     return (
         <div className="videos-view">
-        videos
+            <ReactPlayer  className="video-player"width="90%" height="90%" controls="true" url={selectedVideoUrl} />
         </div>
     );
 }

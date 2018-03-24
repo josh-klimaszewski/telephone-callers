@@ -3,7 +3,7 @@
     flex-direction: column;
     box-sizing: border-box;
     margin: 2%;
-    height: 600px;
+    height: 1200px;
 }
 .top {
     display: flex;
@@ -19,6 +19,7 @@
     flex-direction: column;
     margin: 2%;
     width: 90%;
+    
 
 }
 .nav-bar {
@@ -41,29 +42,40 @@
     border: 1px solid black;
     margin: 2%;
     height: 90%;
+    
 }
+.videos-view {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .list-box {
     height: 20%;
     border: 1px solid black;
     margin-top: 2%;
     
 }
-.videos-list {
+.videos-list, .projects-list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 100%;
     
-}
-.video-thumb {
-    width: 20%;
-    margin: 2% 0%;
-    border: 1px solid black;
-   
+    
 }
 
 
-/* .video-one {
-    background-image: url("media/telcal1.jpg");
-    
-    
-} */
+.project-thumb img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
