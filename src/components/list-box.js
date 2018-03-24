@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectsList from './lists/projects-list';
 import VideosList from './lists/videos-list';
 
-const ListBox = ({projectsListShow, videosListShow, onVideoSelect}, props) => {
+const ListBox = ({projectsListShow, videosListShow}, props) => {
 
 
     return (

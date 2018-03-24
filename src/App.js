@@ -7,6 +7,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.videoHandler = this.videoHandler.bind(this);
 
     this.state = {
       homeListShow: true,
@@ -14,6 +15,9 @@ class App extends Component {
       videosListShow: false,
       selectedVideoUrl: null
     }
+  }
+  videoHandler(videoUrl) {
+    this.setState({selectedVideoUrl: videoUrl})
   }
   render() {
     return (
@@ -36,7 +40,7 @@ class App extends Component {
         {!this.state.homeListShow && <ListBox 
           projectsListShow={this.state.projectsListShow}
           videosListShow={this.state.videosListShow}
-          onVideoSelect={selectedVideoUrl => this.setState({selectedVideoUrl})}
+          onVideoSelect={this.videoHandler}
         />}
       </div>
     );

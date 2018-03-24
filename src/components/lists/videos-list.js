@@ -2,7 +2,7 @@ import React from 'react';
 
 import VideoThumbnail from './video-thumbnail';
 
-const VideosList = (props) => {
+const VideosList = ({onVideoSelect}) => {
     const videoUrls = [
         'https://www.youtube.com/watch?v=aehA_6-NMm0',
         'https://www.youtube.com/watch?v=fBTScNOALps',
@@ -15,7 +15,7 @@ const VideosList = (props) => {
             <VideoThumbnail
                 videoUrl={videoUrl}
                 key={videoUrl}
-                onVideoSelect={props.onVideoSelect}
+                onClick={() => onVideoSelect(videoUrl)}
                 
              />
         );
