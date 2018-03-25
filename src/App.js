@@ -30,12 +30,6 @@ class App extends Component {
         
           <div className="view">
             <div className="header">Telephone Callers</div>
-            {!this.state.homeShow && <ListBox 
-              projectsListShow={this.state.projectsListShow}
-              videosListShow={this.state.videosListShow}
-              onVideoSelect={this.videoHandler}
-              onProjectSelect={this.projectHandler}
-            />}
             <ViewBox
               homeShow={this.state.homeShow}
               projectsListShow={this.state.projectsListShow}
@@ -44,17 +38,21 @@ class App extends Component {
               selectedProject={this.state.selectedProject}
              />
           </div>
-          <NavBar
-            onHomeClick={() => this.setState({homeShow: true, projectsListShow: false, videosListShow: false})}
-            onProjectsClick={() => this.setState({homeShow: false, projectsListShow: true, videosListShow: false})}
-            onVideosClick={() => this.setState({homeShow: false, projectsListShow: false, videosListShow: true})}
-           />
+          <div className="nav-box">
+            <NavBar
+              onHomeClick={() => this.setState({homeShow: true, projectsListShow: false, videosListShow: false})}
+              onProjectsClick={() => this.setState({homeShow: false, projectsListShow: true, videosListShow: false})}
+              onVideosClick={() => this.setState({homeShow: false, projectsListShow: false, videosListShow: true})}
+            />
+            {!this.state.homeShow && <ListBox 
+              projectsListShow={this.state.projectsListShow}
+              videosListShow={this.state.videosListShow}
+              onVideoSelect={this.videoHandler}
+              onProjectSelect={this.projectHandler}
+            />}
+          </div>
         </div>
-        
-      
     );
   }
-  
 }
-
 export default App;

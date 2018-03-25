@@ -8,6 +8,9 @@ const VideosView = ({selectedVideoUrl}) => {
         className="video-player"  
         controls={true} 
         url={selectedVideoUrl} 
+        width="80%"
+        height="100%"
+        
      />
 
     );

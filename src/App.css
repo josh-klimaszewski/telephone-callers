@@ -9,84 +9,59 @@
     
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
+}
+.nav-box {
+    width: 20%;
+    display: flex;
+    height: 600px;
 }
 .nav-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
-    width: 10%;
-    height: 600px;
+    
+    width: 50%;
+    
     margin-left: 2%;
 
 }
-
-.header {
-    border: 1px solid black;
-    height: 100px;
-}
-
 .list-box {
-    height: 100px;
-    
-    margin-bottom: 2%;  
+    width: 50%;
 }
 .projects-list, .videos-list {
-    height: inherit;
+    height: 600px;
+    
     display: flex;
+    flex-direction: column;
     justify-content: space-around; 
+    align-items: center;
 }
 .project-thumb, .video-thumb {
     height: 100px;
     width: 100px;
 }
+
+.header {
+    height: 100px;
+}
+
+
 .view-box {
     display: flex;
     justify-content: center;
-}
-.home-view {
-    width: 80%;
-    height: 80%;
+    height: 500px;
 }
 .projects-view {
-    
-    height: 600px;
-}
-.video-view {
-
-}
-
-
-
-/* .projects-view {
     height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-
-.projects-view iframe {
-    
-    height: inherit;
-    width: 40%;
-    border: 1px solid black;
-    border-radius: 10px;
-
-}
-.home-view {
+.bandcamp-embed {
     height: 100%;
-    
-    
 }
-.videos-view {
-    display: flex;
-    width: inherit;
-    height: inherit;
-    align-items: center;
-    justify-content: center;
-} */
+.projects-info {
 
-
-
-
+}
