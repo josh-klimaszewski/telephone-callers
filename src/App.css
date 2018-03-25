@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(#4f345a, #5d4e6d);
+    background: linear-gradient(to right, #829a8b, #4f345a);
 }
 .App {
     display: flex;
@@ -202,7 +202,7 @@ body {
         align-items: center;
     }
     .header h1 {
-        font-size: 140%;
+        font-size: 120%;
     }
     .view, .nav-box {
         width: 100%;
