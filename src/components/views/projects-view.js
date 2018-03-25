@@ -5,11 +5,12 @@ const ProjectsView = ({selectedProject}) => {
     
     const src = selectedProject.src;
     const url = `https://bandcamp.com/EmbeddedPlayer/album=${src}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/`;
-    return (
-        <div className="projects-view">
-            
-            <iframe src={url} seamless></iframe>
-        </div>
+    return (  
+        <iframe 
+        className="projects-view"
+        src={url} 
+        seamless></iframe>
+        
     );
 }
 export default ProjectsView;

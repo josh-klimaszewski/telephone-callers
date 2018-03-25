@@ -1,27 +1,15 @@
+
+
 .App {
     display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     margin: 2%;
-    height: 800px;
-}
-.top {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    height: 100%;
-    
-    
-    
 }
 .view {
-    border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
-    margin: 2%;
     width: 90%;
-    
-
 }
 .nav-bar {
     display: flex;
@@ -30,51 +18,49 @@
     align-items: center;
     border: 1px solid black;
     width: 10%;
-    margin: 2%;
+    height: 600px;
+    margin-left: 2%;
 
 }
 
 .header {
     border: 1px solid black;
-    margin: 2%;
-    height: 10%;
+    height: 100px;
 }
-.view-box {
-    border: 1px solid black;
-    margin: 2%;
-    height: 90%;
-    
-}
-.videos-view {
-    display: flex;
-    width: inherit;
-    height: inherit;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .list-box {
-    height: 20%;
-    border: 1px solid black;
-    margin: 2%;
+    height: 100px;
     
+    margin-bottom: 2%;  
 }
-.videos-list, .projects-list {
+.projects-list, .videos-list {
+    height: inherit;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    
-    
+    justify-content: space-around; 
 }
-
-
-.project-thumb img {
+.project-thumb, .video-thumb {
     height: 100px;
     width: 100px;
 }
+.view-box {
+    display: flex;
+    justify-content: center;
+}
+.home-view {
+    width: 80%;
+    height: 80%;
+}
 .projects-view {
+    
+    height: 600px;
+}
+.video-view {
+
+}
+
+
+
+/* .projects-view {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -93,6 +79,13 @@
     
     
 }
+.videos-view {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+} */
 
 
 

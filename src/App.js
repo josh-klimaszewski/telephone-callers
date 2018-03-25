@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="top">
+        
           <div className="view">
             <div className="header">Telephone Callers</div>
             {!this.state.homeShow && <ListBox 
@@ -51,7 +51,7 @@ class App extends Component {
            />
         </div>
         
-      </div>
+      
     );
   }
   

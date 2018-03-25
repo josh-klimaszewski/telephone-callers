@@ -1,10 +1,11 @@
 import React from 'react';
 const ProjectThumbnail = ({imageUrl, project, onProjectSelect}) => {
     return (
-        <div className="project-thumb" onClick={() => onProjectSelect(project)}>
-            <img src={imageUrl} alt=''  />
-        </div>
-        
+        <img 
+        className="project-thumb" 
+        onClick={() => onProjectSelect(project)} 
+        src={imageUrl} 
+        alt=''  />
     );
 }
 export default ProjectThumbnail;
