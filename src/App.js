@@ -10,11 +10,11 @@ class App extends Component {
     this.videoHandler = this.videoHandler.bind(this);
     this.projectHandler = this.projectHandler.bind(this);
     this.state = {
-      homeListShow: true,
+      homeShow: true,
       projectsListShow: false,
       videosListShow: false,
-      selectedVideoUrl: null,
-      selectedProject: {}
+      selectedVideoUrl: 'https://www.youtube.com/watch?v=aehA_6-NMm0',
+      selectedProject: {name: 'Wainscoting 2057', imageUrl: 'https://f4.bcbits.com/img/a3019626676_16.jpg', src: '991521820'}
     }
   }
   videoHandler(videoUrl) {
@@ -30,8 +30,14 @@ class App extends Component {
         <div className="top">
           <div className="view">
             <div className="header">Telephone Callers</div>
+            {!this.state.homeShow && <ListBox 
+              projectsListShow={this.state.projectsListShow}
+              videosListShow={this.state.videosListShow}
+              onVideoSelect={this.videoHandler}
+              onProjectSelect={this.projectHandler}
+            />}
             <ViewBox
-              homeListShow={this.state.homeListShow}
+              homeShow={this.state.homeShow}
               projectsListShow={this.state.projectsListShow}
               videosListShow={this.state.videosListShow}
               selectedVideoUrl={this.state.selectedVideoUrl}
@@ -39,17 +45,12 @@ class App extends Component {
              />
           </div>
           <NavBar
-            onHomeClick={() => this.setState({homeListShow: true, projectsListShow: false, videosListShow: false})}
-            onProjectsClick={() => this.setState({homeListShow: false, projectsListShow: true, videosListShow: false})}
-            onVideosClick={() => this.setState({homeListShow: false, projectsListShow: false, videosListShow: true})}
+            onHomeClick={() => this.setState({homeShow: true, projectsListShow: false, videosListShow: false})}
+            onProjectsClick={() => this.setState({homeShow: false, projectsListShow: true, videosListShow: false})}
+            onVideosClick={() => this.setState({homeShow: false, projectsListShow: false, videosListShow: true})}
            />
         </div>
-        {!this.state.homeListShow && <ListBox 
-          projectsListShow={this.state.projectsListShow}
-          videosListShow={this.state.videosListShow}
-          onVideoSelect={this.videoHandler}
-          onProjectSelect={this.projectHandler}
-        />}
+        
       </div>
     );
   }

@@ -4,7 +4,7 @@ const HomeView = () => {
     
     return (
         <div className="home-view">
-        home
+            <img src="https://image.ibb.co/cUDM0S/bandpic_colorized.jpg" alt=''  />
         </div>
     );
 }
