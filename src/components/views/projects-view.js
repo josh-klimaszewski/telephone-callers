@@ -4,6 +4,7 @@ const ProjectsView = ({selectedProject}) => {
     console.log(selectedProject)
     const name = selectedProject.name;
     const src = selectedProject.src;
+    const description = selectedProject.description;
     const url = `https://bandcamp.com/EmbeddedPlayer/album=${src}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/`;
     return ( 
         <div className="projects-view"> 
@@ -13,7 +14,8 @@ const ProjectsView = ({selectedProject}) => {
             seamless>
             </iframe>
             <div className="projects-info">
-            {name}
+            <h2>{name}</h2>
+            <h3>{description}</h3>
             </div>
         </div>
         

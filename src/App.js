@@ -14,7 +14,12 @@ class App extends Component {
       projectsListShow: false,
       videosListShow: false,
       selectedVideoUrl: 'https://www.youtube.com/watch?v=aehA_6-NMm0',
-      selectedProject: {name: 'Wainscoting 2057', imageUrl: 'https://f4.bcbits.com/img/a3019626676_16.jpg', src: '991521820'}
+      selectedProject: {
+        name: 'Wainscoting 2057', 
+        imageUrl: 'https://f4.bcbits.com/img/a3019626676_16.jpg', 
+        src: '991521820', 
+        description: `Recorded in early 2011 around Ann Arbor and Detroit. Posthumous self release. Released May 2, 2012.`
+      }
     }
   }
   videoHandler(videoUrl) {
@@ -29,7 +34,7 @@ class App extends Component {
       <div className="App">
         
           <div className="view">
-            <div className="header">Telephone Callers</div>
+            <div className="header"><h1>telephone callers</h1></div>
             <ViewBox
               homeShow={this.state.homeShow}
               projectsListShow={this.state.projectsListShow}
