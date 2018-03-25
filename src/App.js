@@ -34,7 +34,16 @@ class App extends Component {
       <div className="App">
         
           <div className="view">
-            <div className="header"><h1>telephone callers</h1></div>
+            <div className="header">
+              <h1 className="logo1">te</h1>
+              <h1 className="logo2">lep</h1>
+              <h1 className="logo3">h</h1>
+              <h1 className="logo4">one</h1>
+              <h1 className="logo5">c</h1>
+              <h1 className="logo6">al</h1>
+              <h1 className="logo7">ler</h1>
+              <h1 className="logo8">s</h1>
+            </div>
             <ViewBox
               homeShow={this.state.homeShow}
               projectsListShow={this.state.projectsListShow}
@@ -44,17 +53,18 @@ class App extends Component {
              />
           </div>
           <div className="nav-box">
-            <NavBar
-              onHomeClick={() => this.setState({homeShow: true, projectsListShow: false, videosListShow: false})}
-              onProjectsClick={() => this.setState({homeShow: false, projectsListShow: true, videosListShow: false})}
-              onVideosClick={() => this.setState({homeShow: false, projectsListShow: false, videosListShow: true})}
-            />
             {!this.state.homeShow && <ListBox 
               projectsListShow={this.state.projectsListShow}
               videosListShow={this.state.videosListShow}
               onVideoSelect={this.videoHandler}
               onProjectSelect={this.projectHandler}
             />}
+            <NavBar
+              onHomeClick={() => this.setState({homeShow: true, projectsListShow: false, videosListShow: false})}
+              onProjectsClick={() => this.setState({homeShow: false, projectsListShow: true, videosListShow: false})}
+              onVideosClick={() => this.setState({homeShow: false, projectsListShow: false, videosListShow: true})}
+            />
+            
           </div>
         </div>
     );

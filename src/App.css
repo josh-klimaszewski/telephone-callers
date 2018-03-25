@@ -16,6 +16,7 @@ body {
 .nav-box {
     width: 20%;
     display: flex;
+    justify-content: flex-end;
     width: 300px;
     height: 600px;
    
@@ -31,9 +32,18 @@ body {
     border-radius: 20px;
     width: 150px;
     height: inherit;
+    
 }
 .nav-bar div {
     color: #c9f299;
+}
+.nav-button {
+    border-radius: 15px;
+    width:150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-line {
     border: 2px solid #829a8b;
@@ -63,7 +73,52 @@ body {
 .header {
     height: 100px;
     font-family: 'Mina', sans-serif;
-    /* border: 1px solid black; */
+    position: relative;
+}
+.header h1 {
+    color: #c9f299;
+}
+.logo1 {
+    position: absolute;
+    top: 0;
+    left: 28%;
+
+}
+.logo2 {
+    position: absolute;
+    top: -1%;
+    left: 32%;
+    
+}
+.logo3 {
+    position: absolute;
+    top: -7%;
+    left: 37%;
+}
+.logo4 {
+    position: absolute;
+    top: 2%;
+    left: 39%;
+}
+.logo5 {
+    position: absolute;
+    top: 10%;
+    left: 54.5%;
+}
+.logo6 {
+    position: absolute;
+    top: 0;
+    left: 57%;
+}
+.logo7 {
+    position: absolute;
+    top: -3%;
+    left: 60%;
+}
+.logo8 {
+    position: absolute;
+    top: 0;
+    left: 68%;
 }
 
 .view-box {
@@ -85,16 +140,7 @@ body {
     font-weight: 600;
     color: #c9f299;
 }
-.broken-1 {
-    position: absolute;
-    top: 0%;
-    left: 2%;
-}
-.broken-2 {
-    position: absolute;
-    top: 1%;
-    left: 29%;
-}
+
 .broken-3 {
     position: absolute;
     top: 20%;
@@ -112,8 +158,8 @@ body {
 }
 .broken-6 {
     position: absolute;
-    top: 50%;
-    left: 60%;
+    top: 20%;
+    left: 70%;
     
 }
 .projects-view {
@@ -141,4 +187,57 @@ body {
 .video-player {
     border: 4px solid #9cbfa7;
     border-radius: 5px;
+}
+/* hover states */
+.nav-button:hover {
+    background-color: #9cbfa7;
+}
+.project-thumb:hover, .video-thumb:hover {
+    border: 4px solid #c9f299;
+}
+/* media queries  */
+@media only screen and (max-width: 768px) {
+    .App {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header h1 {
+        font-size: 140%;
+    }
+    .view, .nav-box {
+        width: 100%;
+    }
+    .nav-box {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .nav-bar {
+        flex-direction: row;
+        width: 100%;
+        height: 100px; 
+    }
+    .nav-button {
+        height: 100px;
+        width: 33%;
+    }
+    .nav-line {
+        width: 0;
+        height: 80%;
+    }
+    .list-box {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 8%;
+        margin-top: 8%;
+    }
+    .projects-list, .videos-list {
+        flex-direction: row;
+        height: 100px;
+    }
+    .project-thumb, .video-thumb {
+        height: 100%;
+    }
+    
+
 }
