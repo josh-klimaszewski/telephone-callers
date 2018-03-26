@@ -1,6 +1,7 @@
 
 body {
     background: linear-gradient(to right, #829a8b, #4f345a);
+    margin: 2%;
 }
 .App {
     display: flex;
@@ -40,7 +41,7 @@ body {
 .nav-button {
     border-radius: 15px;
     width:150px;
-    height: 200px;
+    height: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,6 +181,7 @@ body {
     border: 4px solid #9cbfa7;
     border-radius: 10px;
     height: 100%;
+    margin-right: 2%;
 }
 .projects-info {
     width: 40%;
@@ -211,6 +213,7 @@ body {
         flex-direction: column;
         justify-content: center;
         
+        
     }
     .nav-bar {
         flex-direction: row;
@@ -227,7 +230,7 @@ body {
     }
     .list-box {
         height: 100px;
-        width: 100%;
+        width: 80%;
         margin-bottom: 8%;
         margin-top: 8%;
     }
@@ -237,6 +240,16 @@ body {
     }
     .project-thumb, .video-thumb {
         height: 100%;
+    }
+    img, iframe {
+        max-width: 75%;
+        height: auto;
+    }
+    @media only screen and (max-width: 600px) {
+        img {
+            max-width: 75%;
+            height: auto;
+        }
     }
     
 
