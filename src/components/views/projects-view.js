@@ -9,6 +9,7 @@ const ProjectsView = ({selectedProject}) => {
     return ( 
         <div className="projects-view"> 
             <iframe 
+            title="bandcamp-embed"
             className="bandcamp-embed"
             src={url} 
             seamless>
