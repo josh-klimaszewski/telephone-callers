@@ -1,6 +1,5 @@
 {
   "name": "telephone-callers",
-  "homepage": "https://josh-klimaszewski.github.io/telephone-callers",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
