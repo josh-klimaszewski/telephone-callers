@@ -35,14 +35,14 @@ class App extends Component {
         
           <div className="view">
             <div className="header">
-              <h1 className="logo1">te</h1>
-              <h1 className="logo2">lep</h1>
-              <h1 className="logo3">h</h1>
-              <h1 className="logo4">one</h1>
-              <h1 className="logo5">c</h1>
-              <h1 className="logo6">al</h1>
-              <h1 className="logo7">ler</h1>
-              <h1 className="logo8">s</h1>
+              <h1 className="logo logo1">te</h1>
+              <h1 className="logo logo2">lep</h1>
+              <h1 className="logo logo3">h</h1>
+              <h1 className="logo logo4">one</h1>
+              <h1 className="logo logo5">c</h1>
+              <h1 className="logo logo6">al</h1>
+              <h1 className="logo logo7">ler</h1>
+              <h1 className="logo logo8">s</h1>
             </div>
             <ViewBox
               homeShow={this.state.homeShow}
